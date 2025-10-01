@@ -1,1 +1,76 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+   font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: #03045E; /* altera a cor de todos os links das páginas */
+}
+
+header {
+    margin: 2vw 4vw;
+    background-color: #F7F8FD;
+   
+}
+
+header nav {
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    padding: 2vw;
+}
+
+header nav ul li a {
+    font-size: 1.1rem;
+}
+
+header nav ul li a.login {
+    color: white;
+    background-color: #03045E;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+header nav ul li a.login:hover {
+    color: #03045E;
+    background-color: #03055e5d;
+    transition: 0.3s;
+}
+
+
+/*--------------------------------------- BANNER -------------------------------------------------*/
+
+
+.banner {
+    background-color: white;
+     margin: 2vw 4vw;
+}
+
+.banner div.banners {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    color: #03045E;
+    font-weight: bolder;
+}
+.banner p {
+    color: #03045E;
+    opacity: 50%;
+}
