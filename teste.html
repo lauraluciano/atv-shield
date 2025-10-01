@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Shield</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                    <li>
+                        <a href="#">Team
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">History</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Service</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>tituloooooooooooooooooo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Odit repellat veniam culpa neque delectus dignissimos
+        officia eligendi temporibus, sequi facilis architect
+        o quaerat nihil quo labore, dolorem minus. Eveniet,
+        exercitationem tenetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo error reprehenderit hic temporibus! Vitae, vero
+        ipsum quas incidunt ratione quae error consectetur blanditiis dolor illum voluptatem quis, eligendi reiciendis.
+    </p>
+    <p id="btn-modal">abrir modal</p>
+    <div id="modal">
+        <div >
+        <h2>janela modal</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id a optio voluptatum quas necessitatibus labore
+            error dolores pariatur eligendi, cumque, inventore aliquam aliquid laudantium ullam distinctio nulla, ex
+            vero laboriosam!
+        </p>
+          </div>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li ul {
+            display: none;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: beige;
+            position: absolute;
+        }
+
+        nav ul li a:hover {
+            color: blueviolet;
+        }
+
+        nav {
+            background-color: bisque;
+        }
+
+        nav ul li {
+            justify-content: space-between;
+            padding: 0 20px 0 20px;
+        }
+
+
+div#modal  {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.63);
+    display: none;
+}
+div#modal div {
+    background: white;
+    margin: 25vw 25vw;
+}
+
+
+
+
+
+
+    </style>
+
+    <script>
+        let btnModal = document.getElementById("btn-modal");
+        let modal = document.getElementById("modal");
+        btnModal.addEventListener("click", function(){
+            console.log("Foiiiiiiiii");
+            modal.style.display="block"; 
+        });
+modal.addEventListener("click", function (){
+    modal.style.display="none"
+})
+     
+
+
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>
